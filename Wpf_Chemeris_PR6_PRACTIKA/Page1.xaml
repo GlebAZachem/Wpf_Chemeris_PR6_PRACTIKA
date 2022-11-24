@@ -1,0 +1,32 @@
+﻿<Page x:Class="Wpf_Chemeris_PR6_PRACTIKA.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf_Chemeris_PR6_PRACTIKA"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid Background="#FFD0B296">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="350*"/>
+            <ColumnDefinition Width="220*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.ColumnSpan="3" Background="#FF545454"></TextBlock>
+        <TextBlock Grid.Column="1" Text="Auth" HorizontalAlignment="Center" Padding="20" FontSize="32" />
+        <Image Grid.Row="0"  Source="Res/1.png" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <Button Grid.Column="3" Width="50" Height="50" HorizontalAlignment="Right"  Margin="10" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click">
+            <Image x:Name="Close" Source="Res/2.png" />
+        </Button>
+        <TextBlock Grid.Row="0" Text="Admin" HorizontalAlignment="Center"  Padding="16" FontSize="32"/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="Admin Page" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
+
+    </Grid>
+</Page>
