@@ -27,22 +27,18 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Grid.ColumnSpan="3" Grid.Row="0"  Background="#FF545454" Margin="0,0,0.333,64.333" Grid.RowSpan="2"></TextBlock>
+        <Label Content=" Админ логин и пароль 1" Grid.ColumnSpan="3" Grid.RowSpan="5"/>
         <TextBlock  FontSize="32" Padding="20" HorizontalAlignment="Center" Background="#FF545454" Margin="34.667,0,37.333,64.333" Grid.RowSpan="2" Width="278" Grid.Column="1">Не бейте прошу</TextBlock>
-
         <Label x:Name="Label1" Grid.Row="2" Grid.Column="1" Background="White" Content="Логин"  Foreground="#FF9C9C9C" FontSize="18" Margin="4.667,4.667,6.333,5" />
         <TextBox x:Name="Username" Grid.Row="2" Grid.Column="1"  VerticalContentAlignment="Center" FontSize="18" Foreground="Black" TextChanged="Username_TextChanged" Background="{x:Null}"  Margin="4.667,4.667,6.333,5"/>
-
         <Label x:Name="Label2" Grid.Row="3"  Grid.Column="1" Content="Пароль"  Foreground="#FF9C9C9C" VerticalContentAlignment="Center" FontSize="18"  Background="White"  Margin="4.667,5,6.333,4.667" />
         <TextBox x:Name="Password" Grid.Row="3" Grid.Column="1" Foreground="Black" VerticalContentAlignment="Center" FontSize="18" Background="{x:Null}" TextChanged="Password_TextChanged" Margin="4.667,5,6.333,4.667" />
-
         <Button Grid.Row="4"  Grid.Column="1" Width="90" Height="30" Content="Войти" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" Margin="0,5.333,6.333,0"  />
-
         <StackPanel Grid.Row="4" Grid.Column="1"  Orientation="Horizontal"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="1.667,0.333,0,0" Width="194">
             <Label Content="Запомнить меня?" FontSize="18" />
             <CheckBox x:Name="RM"  Margin="12" />
         </StackPanel>
-
-        <Frame x:Name="Bruh1" Grid.ColumnSpan="3" Grid.RowSpan="5" Source="page3.xaml" NavigationUIVisibility="Hidden" Margin="0,0,0.333,-0.333"/>
+        <Frame x:Name="Pomogite" Grid.ColumnSpan="3" Grid.RowSpan="5" Source="page3.xaml" NavigationUIVisibility="Hidden" Margin="0,0,0.333,-0.333"/>
 
     </Grid>
 </Window>

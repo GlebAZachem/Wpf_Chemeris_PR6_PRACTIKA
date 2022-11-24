@@ -34,40 +34,31 @@ namespace Wpf_Chemeris_PR6_PRACTIKA
                 MessageBox.Show("Введите логин");
             else if (Password1 == "")
                 MessageBox.Show("Введите пароль");
-            else if (User == "Admin" && Password1 == "Admin")
-                Bruh1.Navigate(new Uri("Page1.xaml", UriKind.Relative));
-            else if (User != "Admin" && User != "User")
+            else if (User == "1" && Password1 == "1")
+                Pomogite.Navigate(new Uri("Page1.xaml", UriKind.Relative));
+            else if (User != "1" && User != "2")
                 MessageBox.Show("Логин неверный");
-            else if (Password1 != "Admin" && Password1 != "User")
+            else if (Password1 != "1" && Password1 != "2")
                 MessageBox.Show("Пароль не правильный");
-            else if (User == "User" && Password1 == "User")
-                Bruh1.Navigate(new Uri("Page2.xaml", UriKind.Relative));
-
-
+            else if (User == "2" && Password1 == "2")
+                Pomogite.Navigate(new Uri("Page2.xaml", UriKind.Relative));
 
             Label2.Content = "Password";
             Password.Text = "";
 
             if (RM.IsChecked == false)
-            {
-                Label1.Content = "Username";
-                Username.Text = "";
-            }
-
+            {Label1.Content = "Username";
+                Username.Text = "";}
             else if (RM.IsChecked == true)
-            {
-                Label1.Content = "";
-                Username.Text = User;
-            }
+            {Label1.Content = "";
+                Username.Text = User;}
         }
-
         private void Username_TextChanged(object sender, TextChangedEventArgs e)
         {
             Label1.Content = "";
             if (Username.Text == "")
                 Label1.Content = "Username";
         }
-
         private void Password_TextChanged(object sender, TextChangedEventArgs e)
         {
             Label2.Content = "";

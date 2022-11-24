@@ -8,7 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Background="#FFD0B296">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE06A6A" Offset="0"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="5*"/>
@@ -25,8 +31,8 @@
         <Button Grid.Column="3" Width="50" Height="50" HorizontalAlignment="Right"  Margin="10" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click">
             <Image x:Name="Close" Source="Image/2.png" />
         </Button>
-        <TextBlock Grid.Row="0" Text="User"  Padding="16" FontSize="32" Margin="50,0,0,0" />
-        <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="User Page" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Row="0" Text="Пользователь"  Padding="16" FontSize="32"/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="Страница пользователя" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
 
     </Grid>
 </Page>
